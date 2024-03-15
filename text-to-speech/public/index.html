@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-to-speech demo</title>
+    <style>
+      #spinner {
+        width: 10vw;
+        aspect-ratio: 1/1;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: red;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="message-input" />
+    <button id="createAudioBTN">Create Audio</button>
+    <button disabled id="playAudioBTN">Play Audio</button>
+    <script type="module" src="js/script.js"></script>
+    <div id="spinner"></div>
+  </body>
+</html>
