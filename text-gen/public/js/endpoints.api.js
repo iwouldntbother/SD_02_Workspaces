@@ -1,4 +1,4 @@
-const API_TOKEN = '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';
+const API_TOKEN = '';
 const model = 'TheBloke/Wizard-Vicuna-7B-Uncensored-GPTQ';
 
 const query = async (data) => {
